@@ -1,7 +1,9 @@
 > **Внимание!** Проект написан под iOS =< 7.1.2 (iPhone =< 5) и в настоящее время **не поддерживается**.
 
-Contractions (iOS app)
-======================
+Contractions Timer (iOS App)
+============================
+
+![Contractions Timer iOS App](https://github.com/gomzyakov/contractions-timer-ios/blob/master/app-mockup-iphone5c.png "Contractions Timer iOS App")
 
 Contractions – simple and convenient contraction timer with user-friendly design. It keeps track of duration and frequency of labor contractions, as well as intervals between them.
 
@@ -24,4 +26,3 @@ We are constantly improving our app! Please, contact us with any suggestions or 
 - [Alexander Gomzyakov](https://github.com/gomzyakov) (developer)
 - [Alexey Nikulin](https://www.facebook.com/alexei.nikulin) (designer)
  
-![alt text](https://github.com/gomzyakov/contractions-timer-ios/blob/master/iphone5c-list-screen.png "Contractions Timer iOS App")
