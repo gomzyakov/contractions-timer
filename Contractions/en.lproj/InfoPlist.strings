@@ -1,0 +1,28 @@
+/* Localized versions of Info.plist keys */
+
+/**
+
+ <<< App Description >>>
+
+ Introducing Contractions – simple and convenient contraction timer with user-friendly design. It keeps track of duration and frequency of labor contractions, as well as intervals between them.
+
+ FEATURES:
+ - Simple one-button timer
+ - Designed for iOS7
+ - Easy editing and deletion of past contractions
+ - Comprehensive journal of all contraction records
+ - Mail exporting
+
+ We are constantly improving our app! Please, contact us with any suggestions or feature requests.
+
+ In the next version, the interface will become more user-friendly as we will add the ability to:
+ - Rate intensity of contractions
+ - Add notes to contraction logs
+
+ <<< Keywords >>>
+
+ contraction, birth, counter, labor, medicos, pregnancy, pregnant, childbirth, contraction, beb
+
+ */
+
+CFBundleDisplayName = "Contractions";
