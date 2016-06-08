@@ -5,7 +5,7 @@ Contractions (iOS app)
 
 Contractions – simple and convenient contraction timer with user-friendly design. It keeps track of duration and frequency of labor contractions, as well as intervals between them.
 
-Available in [App Store](https://itunes.apple.com/en/app/shvatki/id649771422?mt=8)
+~~Available in [App Store](https://itunes.apple.com/en/app/shvatki/id649771422?mt=8)~~
 
 Features:
 - Simple one-button timer
@@ -23,3 +23,5 @@ We are constantly improving our app! Please, contact us with any suggestions or 
 
 - [Alexander Gomzyakov](https://github.com/gomzyakov) (developer)
 - [Alexey Nikulin](https://www.facebook.com/alexei.nikulin) (designer)
+ 
+![alt text](https://github.com/gomzyakov/contractions-timer-ios/blob/master/iphone5c-list-screen.png "Contractions Timer iOS App")
