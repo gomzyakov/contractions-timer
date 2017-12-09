@@ -53,8 +53,6 @@
 #warning правильное решение: увести в экшн кнопки
     [_contractions reloadContractions];
     [self.tableView reloadData];
-	
-	[YMMCounter reportEvent:@"Показан экран Журнала схваток" failure:nil];
 }
 
 #pragma mark -

@@ -1,3 +1,6 @@
-platform:ios, '6.0'
+source 'https://github.com/gomzyakov/contractions-timer.git'
+platform :ios, :deployment_target => '8.0'
 
-pod 'YandexMobileMetrica'
+target :contractions do
+  
+end

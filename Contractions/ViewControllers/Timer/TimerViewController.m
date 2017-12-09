@@ -82,8 +82,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
-	
-	[YMMCounter reportEvent:@"Показан экран Таймера" failure:nil];
 }
 
 #pragma mark - Actions
@@ -106,12 +104,10 @@
         [self stopTimer];
         self.labelTapAnywhereToStop.hidden = YES;
 
-		[YMMCounter reportEvent:@"Остановка таймера" failure:nil];
 	} else {
         [self startTimer];
         self.labelTapAnywhereToStop.hidden = NO;
 		
-		[YMMCounter reportEvent:@"Запуск таймера" failure:nil];
     }
 
     isTimerStarted = !isTimerStarted;

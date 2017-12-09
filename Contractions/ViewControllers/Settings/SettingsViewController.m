@@ -51,8 +51,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
-	
-	[YMMCounter reportEvent:@"Показан экран Настроек" failure:nil];
 }
 
 #pragma mark - Actions
@@ -60,8 +58,6 @@
 - (void)actionClearJournal
 {
     [_contractions deleteAllContractions];
-	
-	[YMMCounter reportEvent:@"Очищен журнал схваток" failure:nil];
 }
 
 - (void)actionDone
@@ -115,9 +111,7 @@
                                                 cancelButtonTitle:okButtonTitle
                                                 otherButtonTitles:nil];
         [message show];
-		
-		[YMMCounter reportEvent:@"Неудачная попытка отправить журнал на email: почта не доступна" failure:nil];
-    }
+	}
 }
 
 #pragma mark - MFMailComposeViewControllerDelegate
@@ -126,13 +120,13 @@
 {
 	switch (result) {
 		case MFMailComposeResultCancelled:
-			[YMMCounter reportEvent:@"Удачная попытка отправить журнал на email: отправка отменена" failure:nil];
+			//[YMMCounter reportEvent:@"Удачная попытка отправить журнал на email: отправка отменена" failure:nil];
 		case MFMailComposeResultSaved:
-			[YMMCounter reportEvent:@"Удачная попытка отправить журнал на email: сохранено в черновики" failure:nil];
+			//[YMMCounter reportEvent:@"Удачная попытка отправить журнал на email: сохранено в черновики" failure:nil];
 		case MFMailComposeResultSent:
-			[YMMCounter reportEvent:@"Удачная попытка отправить журнал на email: отправлено" failure:nil];
+			//[YMMCounter reportEvent:@"Удачная попытка отправить журнал на email: отправлено" failure:nil];
 		case MFMailComposeResultFailed:
-			[YMMCounter reportEvent:@"Неудачная попытка отправить журнал на email: почта не доступна" failure:nil];
+			//[YMMCounter reportEvent:@"Неудачная попытка отправить журнал на email: почта не доступна" failure:nil];
 			break;
 		default:
 			break;

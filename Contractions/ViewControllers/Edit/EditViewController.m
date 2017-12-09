@@ -78,8 +78,6 @@
 {
     self.cellChangeDuration.detailTextLabel.text    = [self.contraction humanizedDuration];
     self.cellChangeDateAndTime.detailTextLabel.text = [self.contraction humanuzedDateTime];
-	
-	[YMMCounter reportEvent:@"Показан экран Редактирования" failure:nil];
 }
 
 #pragma mark - Actions
@@ -138,8 +136,6 @@
     if (buttonIndex == 1) {
         [_contractions deleteContraction:_contraction];
 
-		[YMMCounter reportEvent:@"Удалена единичная запись о схватке" failure:nil];
-
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
@@ -155,7 +151,6 @@
 
     [durationActionSheet dismissWithClickedButtonIndex:0 animated:YES];
 	
-	[YMMCounter reportEvent:@"Скорректированна продолжительность схватки" failure:nil];
 }
 
 - (void)datePickerDoneTap
@@ -166,7 +161,6 @@
 
     [dateActionSheet dismissWithClickedButtonIndex:0 animated:YES];
 
-	[YMMCounter reportEvent:@"Скорректированна дата/время схватки" failure:nil];
 }
 
 - (void)datePickerSelectTodayTap

@@ -16,9 +16,6 @@
 
 @end
 
-// Ключ сбора статистики сервисом Яндекс.Метрика
-static NSUInteger const YMMCounterAPIKey = 26572;
-
 @implementation AppDelegate
 
 @synthesize managedObjectContext       = _managedObjectContext;
@@ -29,9 +26,6 @@ static NSUInteger const YMMCounterAPIKey = 26572;
 {
 	//todo: Нужен [super initialize] ?
 	
-    if ([self class] == [AppDelegate class]) {
-        [YMMCounter startWithAPIKey:YMMCounterAPIKey];
-    }
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
