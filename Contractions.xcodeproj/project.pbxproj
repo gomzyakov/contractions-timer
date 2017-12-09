@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DA86D6F1CF642F4A6CF8A3A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DF36BC8CC642789B30258F /* libPods.a */; };
 		1D04511419156B5A00A4648F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D04511319156B5A00A4648F /* iAd.framework */; };
 		1D1A906F174086510096BE46 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D1A9071174086510096BE46 /* Localizable.strings */; };
 		1D2EF5CC172CDBB4003FF320 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2EF5CB172CDBB4003FF320 /* UIKit.framework */; };
@@ -29,7 +28,6 @@
 		1D2EF62A172CE03F003FF320 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2EF628172CE03F003FF320 /* SettingsViewController.m */; };
 		1D2EF62F172CE08F003FF320 /* NSDate-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2EF62E172CE08F003FF320 /* NSDate-Utilities.m */; };
 		1D2EF69F172CEC0A003FF320 /* Contraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2EF69E172CEC0A003FF320 /* Contraction.m */; };
-		92AD6053D8A694F7E03517A8 /* libPods-contractions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8EA6FF45792B262EEE21BF /* libPods-contractions.a */; };
 		B260AA3E18646EDF000BCA28 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B260AA3D18646EDF000BCA28 /* AudioToolbox.framework */; };
 		B260AA4B1864884A000BCA28 /* GListBarButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = B260AA4A1864884A000BCA28 /* GListBarButtonView.m */; };
 		B26760A818646D9F0024F6E5 /* click.caf in Resources */ = {isa = PBXBuildFile; fileRef = B26760A718646D9F0024F6E5 /* click.caf */; };
@@ -120,7 +118,6 @@
 		B2F0529D190151090061EE8D /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		B2F052A0190151DC0061EE8D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		B2F052A1190151DC0061EE8D /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
-		BF8144B4730944A8B5DF9F37 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +133,6 @@
 				1D2EF5CE172CDBB4003FF320 /* Foundation.framework in Frameworks */,
 				1D2EF5D0172CDBB4003FF320 /* CoreGraphics.framework in Frameworks */,
 				1D2EF5D2172CDBB4003FF320 /* CoreData.framework in Frameworks */,
-				0DA86D6F1CF642F4A6CF8A3A /* libPods.a in Frameworks */,
-				92AD6053D8A694F7E03517A8 /* libPods-contractions.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +146,6 @@
 				1D2EF5ED172CDD80003FF320 /* Resources */,
 				1D2EF5CA172CDBB4003FF320 /* Frameworks */,
 				1D2EF5C9172CDBB4003FF320 /* Products */,
-				BF8144B4730944A8B5DF9F37 /* Pods.xcconfig */,
 				B9D07CC24584F1069346BAE9 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -190,8 +184,6 @@
 				B27379E51855CA9600922C8F /* Category */,
 				1D2EF5E5172CDBB4003FF320 /* contractions.xcdatamodeld */,
 				B2AD91A91903F51300BA2F4A /* Controller */,
-				B292C20C18F19EF100BFB261 /* Helpers */,
-				B27379DE1855BC5300922C8F /* Library */,
 				1D2EF5FC172CDE75003FF320 /* Models */,
 				1D2EF5D4172CDBB4003FF320 /* Supporting Files */,
 				B292C20718F19A7D00BFB261 /* UI */,
@@ -386,14 +378,6 @@
 			path = ../../Contractions/Resources/Sounds;
 			sourceTree = "<group>";
 		};
-		B27379DE1855BC5300922C8F /* Library */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Library;
-			path = ../Contractions/Library;
-			sourceTree = "<group>";
-		};
 		B27379E51855CA9600922C8F /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,14 +417,6 @@
 				B292C20A18F19AC300BFB261 /* CNTSettingsBarButtonItemView.m */,
 			);
 			name = CNTSettingsBarButtonItemView;
-			sourceTree = "<group>";
-		};
-		B292C20C18F19EF100BFB261 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Helpers;
-			path = ../Contractions/Helpers;
 			sourceTree = "<group>";
 		};
 		B2AD91A31903E4B800BA2F4A /* SettingsCell */ = {
@@ -526,7 +502,7 @@
 				ORGANIZATIONNAME = "Alexander Gomzyakov";
 			};
 			buildConfigurationList = 1D2EF5C3172CDBB4003FF320 /* Build configuration list for PBXProject "Contractions" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -770,10 +746,6 @@
 				GCC_PREFIX_HEADER = "contractions/contractions-Prefix.pch";
 				INFOPLIST_FILE = "contractions/contractions-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gomzyakov.contractions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -793,10 +765,6 @@
 				GCC_PREFIX_HEADER = "contractions/contractions-Prefix.pch";
 				INFOPLIST_FILE = "contractions/contractions-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gomzyakov.contractions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
