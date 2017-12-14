@@ -45,7 +45,7 @@
                                                                  [NSBundle mainBundle],
                                                                  @"min",
                                                                  @"Постфикс времени _мин_ (с маленькой буквы, без точки)");
-        humanizedDuration = [humanizedDuration stringByAppendingFormat:@"%u %@ ", minutes, minPostfix];
+        humanizedDuration = [humanizedDuration stringByAppendingFormat:@"%ld %@ ", (long) minutes, minPostfix];
     }
 
     NSString *secPostfix = NSLocalizedStringWithDefaultValue(@"common.secPostfix",
@@ -54,7 +54,7 @@
                                                              @"sec",
                                                              @"Постфикс времени _сек_ (с маленькой буквы, без точки)");
 
-    humanizedDuration = [humanizedDuration stringByAppendingFormat:@"%u %@", seconds, secPostfix];
+    humanizedDuration = [humanizedDuration stringByAppendingFormat:@"%ld %@", (long) seconds, secPostfix];
 
     // if contraction duration more than 30 minutes, believe it is incorrect
     if (_duration > 30*60) {
@@ -79,7 +79,7 @@
                                                                  @"min",
                                                                  @"Постфикс времени _мин_ (с маленькой буквы, без точки)");
 
-        humanizedInterval = [humanizedInterval stringByAppendingFormat:@"%u %@", minutes, minPostfix];
+        humanizedInterval = [humanizedInterval stringByAppendingFormat:@"%ld %@", (long) minutes, minPostfix];
         if (interval < 60) {
             NSString *secPostfix = NSLocalizedStringWithDefaultValue(@"common.secPostfix",
                                                                      @"Localizable",
@@ -103,7 +103,7 @@
                                                                        @"h",
                                                                        @"Постфикс времени _ч_ (одна буква, без точки)");
 
-        humanizedInterval = [NSString stringWithFormat:@"%i %@ %02i %@", hours, shortHourPostfix, minutes, shortMinPostfix];
+        humanizedInterval = [NSString stringWithFormat:@"%ld %@ %02ld %@", (long) hours, shortHourPostfix, (long) minutes, shortMinPostfix];
     }
 
     // if interval more than 24 hour or equal zero, believe it is incorrect

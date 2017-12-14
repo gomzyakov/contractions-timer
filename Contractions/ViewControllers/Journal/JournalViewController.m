@@ -39,18 +39,14 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-#warning Check contractions counter and show info-message, if counter equal to zero
-//	// Check contractions counter and show info-message, if counter equal to zero
-//	if ([contractions numberOfContractions] == 0 ) {
-//		[self.tableView setHidden:YES];
-//	} else {
-//		[self.tableView setHidden:NO];
-//	}
+	#warning Check contractions counter and show info-message, if counter equal to zero
+	//	if ([contractions numberOfContractions] == 0 ) {
+	//		[self.tableView setHidden:YES];
+	//	} else {
+	//		[self.tableView setHidden:NO];
+	//	}
 
-
-
-    // reload table view
-#warning правильное решение: увести в экшн кнопки
+	// reload table view
     [_contractions reloadContractions];
     [self.tableView reloadData];
 }
@@ -93,7 +89,7 @@
         // show disclosure indicator ">"
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 
-#warning в зависимости от интенсивоности схватки выставляем фоновый цвет
+		#warning Colorize cell (by contraction intensivity)
         //	[cell setBackgroundColor:[[UIColor alloc] initWithRed:0.5 green:0.5 blue:0.0 alpha:1.0]];
     }
 

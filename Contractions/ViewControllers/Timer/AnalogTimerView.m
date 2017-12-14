@@ -144,7 +144,6 @@ typedef enum {
 	CGContextStrokePath(context);
 }
 
-#warning возвращать непосредственно цвет
 -(CircleBackgroundColor)backgroundCircleColor
 {
 	NSInteger minutes = _currentSecond / 60.0;

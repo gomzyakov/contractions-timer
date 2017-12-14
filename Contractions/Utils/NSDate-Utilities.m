@@ -105,7 +105,7 @@
 	if (components1.weekOfMonth != components2.weekOfMonth) return NO;
 	
 	// Must have a time interval under 1 week. Thanks @aclark
-	return (abs([self timeIntervalSinceDate:aDate]) < D_WEEK);
+	return (fabs([self timeIntervalSinceDate:aDate]) < D_WEEK);
 }
 
 - (BOOL) isThisWeek
@@ -127,11 +127,10 @@
 	return [self isSameWeekAsDate:newDate];
 }
 
-// Thanks, mspasov
 - (BOOL) isSameMonthAsDate: (NSDate *) aDate
 {
-    NSDateComponents *components1 = [CURRENT_CALENDAR components:NSCalendarUnitYear | NSMonthCalendarUnit fromDate:self];
-    NSDateComponents *components2 = [CURRENT_CALENDAR components:NSCalendarUnitYear | NSMonthCalendarUnit fromDate:aDate];
+    NSDateComponents *components1 = [CURRENT_CALENDAR components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:self];
+    NSDateComponents *components2 = [CURRENT_CALENDAR components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:aDate];
     return ((components1.month == components2.month) &&
             (components1.year == components2.year));
 }
@@ -303,8 +302,8 @@
 // I have not yet thoroughly tested this
 - (NSInteger)distanceInDaysToDate:(NSDate *)anotherDate
 {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [gregorianCalendar components:NSDayCalendarUnit fromDate:self toDate:anotherDate options:0];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [gregorianCalendar components:NSCalendarUnitDay fromDate:self toDate:anotherDate options:0];
     return components.day;
 }
 
@@ -314,7 +313,7 @@
 {
 	NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] + D_MINUTE * 30;
 	NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
-	NSDateComponents *components = [CURRENT_CALENDAR components:NSHourCalendarUnit fromDate:newDate];
+	NSDateComponents *components = [CURRENT_CALENDAR components:NSCalendarUnitHour fromDate:newDate];
 	return components.hour;
 }
 
@@ -351,7 +350,7 @@
 - (NSInteger) week
 {
 	NSDateComponents *components = [CURRENT_CALENDAR components:DATE_COMPONENTS fromDate:self];
-	return components.week;
+	return components.weekOfMonth;
 }
 
 - (NSInteger) weekday

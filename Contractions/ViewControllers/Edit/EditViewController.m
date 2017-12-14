@@ -399,7 +399,7 @@
                                                                    @"Button 'Today' on date picker actionsheet");
 
     UIBarButtonItem *todayButton = [[UIBarButtonItem alloc] initWithTitle:todayButtonTitle
-                                                                    style:UIBarButtonItemStyleBordered
+                                                                    style:UIBarButtonItemStylePlain
                                                                    target:self
                                                                    action:@selector(datePickerSelectTodayTap)];
 

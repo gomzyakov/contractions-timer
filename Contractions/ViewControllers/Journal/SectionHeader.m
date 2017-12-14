@@ -207,7 +207,6 @@ static CGFloat kSelfHeight = 22.0;
 
 #pragma mark - Helpers
 
-#warning Вынести -- нарушен принцип единичной ответственности
 - (NSString *)humanizeDayName:(NSString *)dayName
 {
     // Init humanizator
