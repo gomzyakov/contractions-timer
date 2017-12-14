@@ -1,5 +1,3 @@
-> **Внимание!** Проект написан под iOS =< 7.1.2 (iPhone =< 5) и в настоящее время **не поддерживается**.
-
 Contractions Timer (iOS App)
 ============================
 
@@ -17,10 +15,6 @@ Contractions – simple and convenient contraction timer with user-friendly desi
 
 We are constantly improving our app! Please, contact us with any suggestions or feature requests.
 
-## Requirements
-
-- XCode 4.6
-- iOS 6
 
 ## Team
 
@@ -44,10 +38,6 @@ ___
 
 Мы постоянно работаем над улучшением нашего приложения! Если у вас есть вопросы или пожелания, пожалуйста, свяжитесь с нами.
 
-## Требования
-
-- XCode 4.6
-- iOS 6
 
 ## Команда
 
